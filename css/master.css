@@ -1,0 +1,283 @@
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #8b8b8b;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    /* padding: 0 15px; */
+    margin: 0 auto;
+}
+
+.header{
+  /* padding-top: 30px; */
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header__inner{
+  /* padding: 40px 0; */
+  background-color: #e74c3c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  margin: 20px 0 18px 20px;
+  margin-left: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav{
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.nav__link{
+  display: inline-block;
+  vertical-align: top;
+  margin:0 10px;
+  color: white;
+  text-decoration: none;
+
+  position: relative;
+
+  transition: color .2s linear;
+}
+.nav__link:last-child{
+  margin-right: 20px;
+}
+
+.intro{
+  display: flex;
+  /* padding-top: 182px; */
+  flex-direction: column;
+  justify-content:;
+  width: 100%;
+  height:700px;
+  background: url('../icons/chikago-1.jpg') no-repeat center;
+  -webkit-background-size:cover;
+  background-size: cover;
+}
+
+.intro_suptitle{
+  font-size: 64px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  margin: 279px 0 44px;
+  line-height: 1;
+  /* margin:20px 0; */
+}
+
+.intro_title{
+  color: white;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 14px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.intro_inner{
+  text-align: center;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-top: 82px;
+
+  display: inline-block;
+  vertical-align: top;
+  padding: 18px 55px;
+
+  border: 1px solid #9b9b9b;
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+
+}
+
+.options__inner{
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.bestoption{
+  width: 490px;
+}
+
+.option__tittle{
+  color: #3e3e3e;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.option__text{
+  color: #7e7e7e;
+  margin-top: 34px;
+}
+
+.redSpan{
+  color: #e74c3c;
+}
+
+ a>.redSpan{
+  text-decoration: none;
+  border-bottom: 1px solid #e74c3c;
+}
+
+.redSection{
+  background: url('../icons/nyu_jork_1.jpg') no-repeat center;
+  background-color: #db574a;
+  padding: 51px 0 56px;
+  color: #fff
+}
+.redSection__icon{
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.redSection__tittle{
+  font-size: 38px;
+  text-transform: uppercase;
+  /* color: #fff; */
+  line-height: 0.57;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.redSection__items{
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.3;
+  text-align: center;
+  font-size: 14px;
+}
+
+.ourprojects__inner{
+  margin: 100px 0;
+}
+
+.project__nav{
+  display: flex;
+  justify-content: space-between;
+
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.project__items{
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 33px;
+  color: #000;
+  line-height: 1;
+}
+
+.project__preview{
+  height: 131px;
+  margin-bottom: 17px;
+}
+
+footer{
+  background-color: #000;
+  padding: 35px 0;
+  font-size: 12px;
+}
+
+.footer__inner{
+  display: grid;
+  grid-template-columns:1fr 2fr 1fr;
+}
+
+.footer__tittle{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 29px;
+}
+
+.about__item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__img img{
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.about__text{
+  float: right;
+}
+
+.fromblog__items{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.fromblog__item{
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* line-height: 1; */
+  margin-bottom: 10px;
+}
+
+.fromblog__item__preview img{
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.fromblog__item__preview{
+  display: block;
+  margin-right: 10px;
+}
+
+.fromblog__item__text{
+
+ /* line-height: 1; */
+}
